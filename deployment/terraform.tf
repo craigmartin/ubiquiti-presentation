@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "ubiquity-tf-artifacts"
+    bucket = "ubiquiti-tf-artifacts"
     key    = "ui-presentation/terraform.tfstate"
     region = "us-west-2"
   }

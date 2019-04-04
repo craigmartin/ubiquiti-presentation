@@ -1,5 +1,5 @@
 resource "aws_codepipeline" "pipeline" {
-  name     = "ubiquity-presentation-pipeline"
+  name     = "ubiquiti-presentation-pipeline"
   role_arn = "${aws_iam_role.build.arn}"
 
   artifact_store {

@@ -1,10 +1,10 @@
 resource "aws_s3_bucket" "artifacts" {
-  bucket = "ubiquity-tf-artifacts"
+  bucket = "ubiquiti-tf-artifacts"
   acl    = "private"
 }
 
 resource "aws_codebuild_project" "build" {
-  name = "ubiquity-presentation-project"
+  name = "ubiquiti-presentation-project"
   description = "Builds the client files for the ui-presentation environment."
   build_timeout = "5"
   service_role = "${aws_iam_role.build.arn}"
