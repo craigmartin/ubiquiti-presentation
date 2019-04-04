@@ -1,6 +1,6 @@
 resource "aws_elastic_beanstalk_application" "app" {
   name        = "ui-presentation"
-  description = "Simple Application for Ubiquity Networks presentation by Craig Martin, in order to show deployment pipeline setup."
+  description = "Simple Application for Ubiquiti Networks presentation by Craig Martin, in order to show deployment pipeline setup."
 }
 
 data "aws_availability_zones" "available" {}
